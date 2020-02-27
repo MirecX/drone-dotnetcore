@@ -1,18 +1,9 @@
 kind: pipeline
-platform:
-  os: windows
-  arch: amd64
+
 steps:
 - name: compile
   image: microsoft/dotnet:sdk
   commands:
     - sh build.sh
-- name: build-image
-  image: plugins/docker
-  settings:
-    username: dinorows
-    password: <please-use-your-own-access-token-here>
-    repo: dinorows/dotnetcore-container
-    dockerfile: Web/Dockerfile
 
 
