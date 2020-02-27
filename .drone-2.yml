@@ -13,3 +13,4 @@ steps:
       from_secret: my-drone-secret
     repo: dinorows/dotnetcore-container
     dockerfile: Web/Dockerfile
+    
